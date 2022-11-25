@@ -13,7 +13,7 @@
            <div class="mb-3">
              <label for="sentence" class="form-label">Sentence</label>
              <input type="text" name="sentence" id="sentence" class="form-control" placeholder="Type here a Sentence" aria-describedby="sentenceHelper">
-             <small id="wordHelper" class="text-muted">Just type a Sentence here</small>
+             <small id="sentenceHelper" class="text-muted">Just type a Sentence here</small>
            </div>
 
            <div class="mb-3">

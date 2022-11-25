@@ -2,8 +2,7 @@
 
 $sentence = $_GET['sentence'];
 $badword = $_GET['badword'];
-$newsentence = str_ireplace($badword ,'***', $badword);
-$censorship = "$sentence $newsentence";
+$newsentence = str_ireplace($badword, '***', $sentence);
 
 ?>
 
@@ -17,10 +16,10 @@ $censorship = "$sentence $newsentence";
 </head>
 <body>
     <p><?php echo $sentence; ?></p>
-    <p><?php echo 'La stringa corrente è lunga ' . strlen($sentence) .' caratteri' ?></p>
+    <p><?php echo 'La frase corrente è lunga ' . strlen($sentence) .' caratteri' ?></p>
 
-    <p><?php echo $censorship; ?></p>
-    <p><?php echo 'La stringa corrente è lunga ' . strlen($censorship) .' caratteri' ?></p>
+    <p><?php echo $newsentence; ?></p>
+    <p><?php echo 'La stringa corrente è lunga ' . strlen($newsentence) .' caratteri' ?></p>
 
     
     
